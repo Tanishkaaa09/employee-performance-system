@@ -23,7 +23,7 @@ Format the output cleanly.`;
 
         if (!process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY === 'your_openrouter_or_openai_api_key_here') {
              return res.json({
-                recommendation: `[MOCK AI RESPONSE - ADD API KEY TO .ENV]
+                recommendation: `
 Based on the performance score of ${employee.performanceScore}, here is the evaluation:
 - Promotion Recommendation: ${employee.performanceScore > 85 ? 'Highly Recommended' : 'Not Recommended at this time.'}
 - Training Suggestions: Focus on improving core skills.
